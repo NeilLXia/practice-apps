@@ -13,12 +13,26 @@ const db = Promise.promisifyAll(connection, { multiArgs: true });
 
 db.connectAsync()
   .then(() => console.log(`Connected to MySQL as id: ${db.threadId}`))
-  .then(() =>
-    // Expand this table definition as needed:
-    db.queryAsync(
-      "CREATE TABLE IF NOT EXISTS responses (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY)"
-    )
-  )
+  .then(() => db.queryAsync(
+    "CREATE TABLE IF NOT EXISTS users (" +
+    "id INT NOT NULL AUTO_INCREMENT PRIMARY KEY," +
+    "username TEXT NOT NULL," +
+    "domain TEXT NOT NULL," +
+    "password TEXT NOT NULL" +
+    ")"
+  ))
+  .then(() => db.queryAsync(
+    "CREATE TABLE IF NOT EXISTS responses (" +
+    "id INT NOT NULL AUTO_INCREMENT PRIMARY KEY," +
+    "email TEXT," +
+    "firstname TEXT," +
+    "lastname TEXT," +
+    "shippingaddress TEXT," +
+    "shippingcity TEXT," +
+    "shippingstate VARCHAR(2)," +
+    "shippingzip DECIMAL(5)" +
+    ")"
+  ))
   .catch((err) => console.log(err));
 
 module.exports = db;

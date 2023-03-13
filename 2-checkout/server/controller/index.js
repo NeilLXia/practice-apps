@@ -1,0 +1,1 @@
+module.exports.loginHandler = require("./user.js").loginHandler;

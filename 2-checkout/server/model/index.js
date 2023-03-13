@@ -1,0 +1,1 @@
+module.exports.registerNewUser = require("./user.js").registerNewUser;

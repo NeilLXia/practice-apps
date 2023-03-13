@@ -1,0 +1,19 @@
+#new-address-form {
+  position: fixed;
+
+  width: 500px;
+  height: 700px;
+
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  margin-top: -350px;
+  margin-left: -250px;
+  z-index: 999;
+
+  border: 2px double black;
+  background-color: white;
+}
+#new-address-form-content {
+  margin: 20px;
+}

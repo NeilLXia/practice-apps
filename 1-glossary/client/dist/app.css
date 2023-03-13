@@ -1,0 +1,123 @@
+.app {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-auto-rows: auto;
+
+  border: 2px solid rgb(50, 125, 200);
+  border-radius: 20px;
+}
+
+.app-title {
+  grid-row: 1;
+  grid-column: 1/3;
+  padding: 20px;
+  background-color: rgb(100, 175, 255);
+  border-bottom: 2px solid rgb(50, 125, 200);
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.helper-text {
+  font-size: 14px;
+  color: gray;
+}
+
+.word-list {
+  grid-column: 1;
+  grid-row: 2;
+
+  padding: 20px;
+  border-right: 2px solid rgb(50, 125, 200);
+  border-bottom-left-radius: 18px;
+  background-color: rgb(225, 240, 255);
+}
+
+.word-display {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 20px;
+}
+
+.word-toolbar {
+  margin: 10px 0 20px;
+  background-color: rgb(50, 100, 150);
+}
+
+.search-bar {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  grid-auto-rows: auto;
+  margin: 5px;
+}
+
+.button-style {
+  border: 1px solid rgb(50, 100, 150);
+  border-radius: 0px;
+  background-color: rgb(50, 100, 150);
+  color: white;
+}
+
+.button-substyle {
+  padding: 2px 20px;
+}
+.button-style:hover {
+  background-color: rgb(100, 175, 225);
+  border: 1px solid rgb(25, 50, 100);
+}
+
+.word-individual {
+  margin: 5px;
+  padding: 5px 15px;
+}
+.word-individual:hover {
+  padding: 5px 18px;
+  background-color: rgb(200, 225, 255);
+}
+
+.current-word {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px 0;
+}
+
+.current-definition {
+  font-size: 14px;
+  padding: 10px 20px;
+  min-height: 400px;
+}
+
+.page-buttons {
+  display: grid;
+  padding: 10px 0;
+}
+
+#back-page-button {
+  grid-column: 1;
+  padding: 0 30% 0 10%;
+}
+#forward-page-button {
+  grid-column: 2;
+  padding: 0 0 0 40%;
+}
+#back-page-button:hover, #forward-page-button:hover {
+  color: rgb(25, 50, 100);
+}
+
+#search-input {
+  grid-column: 1;
+  box-sizing: border-box;
+
+  margin: 5px 0;
+}
+
+#search-button {
+  grid-column: 2;
+  box-sizing: border-box;
+
+  margin: 5px 0;
+}

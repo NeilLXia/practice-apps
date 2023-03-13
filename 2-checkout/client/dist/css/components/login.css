@@ -1,0 +1,45 @@
+.form-container {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+
+  width: 100%;
+  margin: auto;
+  padding: 20px 40px;
+  border: 2px solid black;
+}
+
+.form-element {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+
+  padding: 5px 10px;
+}
+
+.container-header {
+  grid-row: 1;
+
+  margin: 0 0 20px 0;
+}
+.email-element {
+  grid-row: 2;
+  grid-template-columns: 100px 200px;
+}
+.password-element {
+  grid-row: 3;
+  grid-template-columns: 100px 200px;
+}
+.form-label {
+  grid-column: 1;
+}
+.form-input {
+  grid-column: 2;
+}
+
+#login-button {
+  grid-row: 4;
+  width: 200px;
+
+  margin: 20px 0;
+}

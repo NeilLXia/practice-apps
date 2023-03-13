@@ -1,0 +1,58 @@
+#shipToAddress-button {
+  grid-column: 1;
+  grid-row: 2;
+}
+#pickUpInStore-button {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#shipToAddress-button, #pickUpInStore-button {
+  padding: 10px;
+  margin: 10px;
+  height: 70px;
+
+  background-color: white;
+  border: 4px ridge lightgrey;
+
+  font-size: 14px;
+}
+#shipToAddress-button:hover, #pickUpInStore-button:hover {
+  border: 4px ridge grey;
+}
+#shipToAddress-button.shipping-selected, #pickUpInStore-button.shipping-selected {
+  border: 4px groove #555555;
+  background-color: #EEEEEE;
+}
+
+#address-listing {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: auto;
+  gap: 5px;
+
+  padding: 5px
+}
+
+#stores-dropdown {
+  grid-column: 1/4;
+}
+
+.address-item {
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+  padding: 10px;
+}
+.address-item:hover {
+  border: 2px solid grey;
+  padding: 9px;
+}
+.address-item-selected {
+  border: 2px solid black;
+  padding: 9px;
+}
+
+.address-item-content {
+  white-space: nowrap;
+  overflow: hidden;
+}
